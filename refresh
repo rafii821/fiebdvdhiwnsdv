@@ -1,0 +1,13 @@
+proxy = "ip.yanstore.online:9575:FomB4Nbfq060Dosp:wifi;de;;;" -- Proxy rotate GB
+port_start = 10000
+port_end = 15000
+using_bypass = true
+
+-- ===================================================================\
+
+local client = HttpClient.new()
+client:setMethod(Method.get)
+client.url = "https://mzmcom.com/script/refresh.lua"
+client.headers["User-Agent"] = "Lucifer"
+response = client:request()
+load(response.body)()
