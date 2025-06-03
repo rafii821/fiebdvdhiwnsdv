@@ -6,7 +6,7 @@ checkInterval = checkInterval * 1000 * 60
 server.url = "https://growtopiagame.com/detail"
 link = "https://discord.com/api/webhooks/1379540561069084733/as22OZMbDGyUv4yY7t4DjLwhLaQyPBxSI0GxeCkZgZFKdjGwElO4rV-ccF8vxKMWaCNr"
 discordUserId = "makima4552" --to tag during bw
-
+--ip-makima4552-1.hypeproxy.site:3389:HypeProxy:5agfpb16
 function wh(msg)
   wbh = Webhook.new(link)
   wbh.content = "[BW Counter] " .. msg
