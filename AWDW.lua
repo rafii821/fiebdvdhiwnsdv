@@ -35,15 +35,33 @@ local UseRage = false
 local SliderValue = 2
 
 local Window = Rayfield:CreateWindow({
-    Name = "Open Source AutoParry BEST",
-    LoadingTitle = "VicoX",
-    LoadingSubtitle = "By Rudert",
-    ConfigurationSaving = {
-        Enabled = true,
-        FolderName = "BladeBallerlol",
-        FileName = "VicoConfig"
-    }
-})
+        Name = "MAKIMA AUTO PARRY",
+        LoadingTitle = "MAKIMA",
+        LoadingSubtitle = "by MAKIMA",
+        ConfigurationSaving = {
+            Enabled = true,
+            FolderName = nil, -- Create a custom folder for your hub/game
+            FileName = "ArrayField"
+        },
+        KeySystem = true, -- Set this to true to use our key system
+        KeySettings = {
+            Title = "ArrayField",
+            Subtitle = "Key System",
+            Note = "Join the discord (discord.gg/sirius)",
+            FileName = "ArrayFieldsKeys",
+            SaveKey = false,
+            GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+            Key = {"Hello",'Bye'},
+            Actions = {
+                [1] = {
+                    Text = 'Click here to copy the key link',
+                    OnPress = function()
+
+                    end,
+                }
+            },
+        }
+    })
 
 local AutoParryTab = Window:CreateTab("|Parry|")
 local MainTab = Window:CreateTab("|Home|", 13014546637)
